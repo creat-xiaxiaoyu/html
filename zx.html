@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+ 
+<body>
+ 
+    <img src="" alt="">
+ 
+    <script>
+        var img = document.querySelector('img');
+        var timer = new Date();
+        var h = timer.getHours(); // 获取当前小时
+ 
+        if (6 < h && h <= 10) {
+            img.src = 'images/2.png'
+        } else if (10 < h && h <= 14) {
+            img.src = 'images/3.png'
+        } else if (14 < h && h <= 20) {
+            img.src = 'images/4.png'
+        } else {
+            img.src = 'images/5.jpg'
+        }
+    </script>
+</body>
+ 
+</html>
